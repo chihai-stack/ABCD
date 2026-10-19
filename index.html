@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Quán Ăn Dân Dã</title>
+    <!-- Thêm thẻ referrer để sửa lỗi bảo mật video YouTube -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="stylesheet" href="css/mau.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>QUÁN ĂN DÂN DÃ</h1>
+                <p>Hương Vị Đậm Đà - Chuẩn Vị Nhà</p>
+            </div>
+            <div class="header-contact">
+                <p>Hotline: <strong>0123 456 789</strong></p>
+                <p>Giờ mở cửa: 08:00 - 22:00</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Trang chủ</a></li>
+            <li><a href="html/gioithieu.html">Giới thiệu</a></li>
+            <li><a href="html/thucdon.html">Thực đơn</a></li>
+            <li><a href="html/lienhe.html">Liên hệ & Đặt bàn</a></li>
+        </ul>
+    </nav>
+    <section class="banner">
+        <div class="banner-text">
+            <h2>Chào Mừng Đến Với Quán Ăn Dân Dã</h2>
+            <p>Thưởng thức các món ăn đặc sản thơm ngon trong không gian ấm cúng</p>
+            <a href="html/lienhe.html" class="btn-primary">Đặt Bàn Ngay</a>
+        </div>
+    </section>
+    <main class="container">
+        <section class="intro-section">
+            <h2>Về Quán Ăn Của Chúng Tôi</h2>
+            <p>Quán Ăn Dân Dã mang đến cho quý khách những món ăn đậm đà hương vị truyền thống. Với nguồn nguyên liệu tươi sạch mỗi ngày cùng đội ngũ đầu bếp giàu kinh nghiệm, chúng tôi cam kết mang lại trải nghiệm ẩm thực tuyệt vời nhất.</p>
+        </section>
+        
+        <!-- Phần Video YouTube đã được cập nhật chuẩn -->
+        <section class="video-section" style="margin: 30px 0; text-align: center;">
+            <h2 style="margin-bottom: 15px;">Thước Phim Giới Thiệu Không Gian & Ẩm Thực Miền Tây</h2>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                    src="https://www.youtube.com/embed/H8p7cH81f-I" 
+                    title="Về MIỀN TÂY ăn CÁ, những món cá ngon miền Tây" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="featured-dishes">
+            <h2>Món Ăn Nổi Bật (Best Seller) - Bấm vào ảnh để xem chi tiết</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="images/laumammientay.jpg" alt="Lẩu Mắm Miền Tây" onclick="openModal(this.src, 'Lẩu Mắm Miền Tây - 120.000 VNĐ')" style="cursor: pointer;" title="Bấm để phóng to ảnh">
+                    <h3>Lẩu Mắm Miền Tây</h3>
+                    <p class="price">120.000 VNĐ</p>
+                    <p>Lẩu mắm miền Tây với nước dùng đậm đà, thơm ngon.</p>
+                </div>
+                <div class="card">
+                    <img src="images/canhchuacalinh.jpg" alt="Canh chua cá linh" onclick="openModal(this.src, 'Canh Chua Cá Linh - 65.000 VNĐ')" style="cursor: pointer;" title="Bấm để phóng to ảnh">
+                    <h3>Canh chua cá linh</h3>
+                    <p class="price">65.000 VNĐ</p>
+                    <p>Canh chua cá linh với vị chua cay thanh mát.</p>
+                </div>
+                <div class="card">
+                    <img src="images/ganuongmatong.jpg" alt="Gà Nướng Mật Ong" onclick="openModal(this.src, 'Gà Nướng Mật Ong - 180.000 VNĐ')" style="cursor: pointer;" title="Bấm để phóng to ảnh">
+                    <h3>Gà Nướng Mật Ong</h3>
+                    <p class="price">180.000 VNĐ</p>
+                    <p>Gà ta thả vườn nướng mật ong nguyên chất giòn rụm.</p>
+                </div>
+                <div class="card">
+                    <img src="images/chuotquaylu.jpg" alt="Chuột Đồng Quay Lu" onclick="openModal(this.src, 'Chuột Đồng Quay Lu - 120.000 VNĐ')" style="cursor: pointer;" title="Bấm để phóng to ảnh">
+                    <h3>Chuột Đồng Quay Lu</h3>
+                    <p class="price">120.000 VNĐ</p>
+                    <p>Chuột đồng quay lu da giòn rụm, thịt thơm ngọt đậm đà.</p>
+                </div>
+                <div class="card">
+                    <img src="images/goingosen.jpg" alt="Gỏi Ngó Sen Tôm Thịt" onclick="openModal(this.src, 'Gỏi Ngó Sen Tôm Thịt - 45.000 VNĐ')" style="cursor: pointer;" title="Bấm để phóng to ảnh">
+                    <h3>Gỏi Ngó Sen Tôm Thịt</h3>
+                    <p class="price">45.000 VNĐ</p>
+                    <p>Ngó sen giòn sần sật trộn tôm thịt chua ngọt thanh mát.</p>
+                </div>
+                <div class="card">
+                    <img src="images/calocnuongchui1.jpg" alt="Cá Lóc Nướng Trui" onclick="openModal(this.src, 'Cá Lóc Nướng Trui - 150.000 VNĐ')" style="cursor: pointer;" title="Bấm để phóng to ảnh">
+                    <h3>Cá Lóc Nướng Trui</h3>
+                    <p class="price">150.000 VNĐ</p>
+                    <p>Cá lóc nướng rơm chuẩn vị miền Tây ăn kèm bánh tráng rau sống.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>QUÁN ĂN DÂN DÃ</h3>
+                <p>Địa chỉ: 123 Đường Nguyễn Huệ, TP. Cao Lãnh, Đồng Tháp</p>
+                <p>Điện thoại: 0123 456 789</p>
+                <p>Email: lienhe@quanandanda.com</p>
+            </div>
+            <div class="footer-links">
+                <h3>Liên Kết Bổ Ích</h3>
+                <p><a href="html/gioithieu.html">Giới thiệu</a></p>
+                <p><a href="html/thucdon.html">Thực đơn</a></p>
+                <p><a href="html/lienhe.html">Đặt bàn</a></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Tròn vị dân dã - Ấm lòng cơm mẹ.</p>
+        </div>
+    </footer>
+    <div id="imageModal" style="display:none; position:fixed; z-index:999; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); text-align:center; padding-top:40px;">
+        <span onclick="closeModal()" style="position:absolute; top:20px; right:40px; color:#fff; font-size:45px; font-weight:bold; cursor:pointer;">&times;</span>
+        <img id="modalImg" style="max-width:75%; max-height:75%; border-radius:8px; box-shadow: 0 0 25px #000; margin-top: 10px;">
+        <p id="modalCaption" style="color:#fff; font-size:22px; margin-top:15px; font-weight:bold;"></p>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

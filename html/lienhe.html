@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ & Đặt Bàn - Quán Ăn Dân Dã</title>
+    <link rel="stylesheet" href="../css/mau.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>QUÁN ĂN DÂN DÃ</h1>
+                <p>Hương Vị Đậm Đà - Chuẩn Vị Nhà</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+<ul>
+    <li><a href="../index.html">Trang chủ</a></li>
+    <li><a href="./gioithieu.html">Giới thiệu</a></li>
+    <li><a href="./thucdon.html">Thực đơn</a></li>
+    <li><a href="./lienhe.html" class="active">Liên hệ & Đặt bàn</a></li>
+</ul>        </ul>
+    </nav>
+    <main class="container">
+        <h2>Đặt Bàn Trực Tuyến</h2>
+        <form class="booking-form" action="#" method="post" onsubmit="alert('Cảm ơn bạn đã đặt bàn! Chúng tôi sẽ liên hệ lại sớm nhất.'); return false;">
+            <div class="form-group">
+                <label>Họ và Tên:</label>
+                <input type="text" required placeholder="Nhập tên của bạn">
+            </div>
+            <div class="form-group">
+                <label>Số Điện Thoại:</label>
+                <input type="tel" required placeholder="Nhập số điện thoại">
+            </div>
+            <div class="form-group">
+                <label>Ngày Đặt:</label>
+                <input type="date" required>
+            </div>
+            <div class="form-group">
+                <label>Số Lượng Khách:</label>
+                <input type="number" min="1" max="50" value="2" required>
+            </div>
+            <button type="submit" class="btn-primary">Gửi Yêu Cầu Đặt Bàn</button>
+        </form>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>Tròn vị dân dã - như mắ nấu.</p>
+        </div>
+    </footer>
+</body>
+</html>
